@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Pathsala</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="homepage.css" rel="stylesheet">
+    <style>
+        .course-container {
+            padding: 50px;
+            text-align: center;
+        }
+        .semester-card {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+        .semester-card:hover {
+            background: #008080;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div class="container course-container">
+        <h2>Select Your Semester</h2>
+        <div class="row mt-4">
+            <div class="col-md-4 mb-3">
+                <a href="semester1.html" class="text-decoration-none">
+                    <div class="semester-card p-4 bg-light">Semester 1</div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="semester2.html" class="text-decoration-none">
+                    <div class="semester-card p-4 bg-light">Semester 2</div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="semester3.html" class="text-decoration-none">
+                    <div class="semester-card p-4 bg-light">Semester 3</div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="semester4.html" class="text-decoration-none">
+                    <div class="semester-card p-4 bg-light">Semester 4</div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="semester5.html" class="text-decoration-none">
+                    <div class="semester-card p-4 bg-light">Semester 5</div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="semester6.html" class="text-decoration-none">
+                    <div class="semester-card p-4 bg-light">Semester 6</div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-3">
+                <a href="semester7.html" class="text-decoration-none">
+                    <div class="semester-card p-4 bg-light">Semester 7</div>
+                </a>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <a href="semester8.html" class="text-decoration-none">
+                    <div class="semester-card p-4 bg-light">Semester 8</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar').innerHTML = data);
+    </script>
+</body>
+</html>

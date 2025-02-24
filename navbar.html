@@ -1,0 +1,71 @@
+<style>
+    /* Apply Pacifico font to 'Pathshala' */
+.pacifico-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+</style>
+
+
+<nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+        <!-- Logo and Brand -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <b class="pacifico-text">Pathshala</b>
+ 
+            <img src="book.jpeg" alt="Logo">
+        </a>
+        <!-- Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#AboutUs">AboutUs</a></li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Courses
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                             <li><a class="dropdown-item" href="semester1.html" onclick="checkLogin('semester1.html')">Semester 1</a></li>
+                             <li><a class="dropdown-item" href="#" onclick="checkLogin('semester2.html')">Semester 2</a></li>
+                             <li><a class="dropdown-item" href="#" onclick="checkLogin('semester3.html')">Semester 3</a></li>
+                             <li><a class="dropdown-item" href="#" onclick="checkLogin('semester4.html')">Semester 4</a></li>
+                             <li><a class="dropdown-item" href="#" onclick="checkLogin('semester5.html')">Semester 5</a></li>
+                             <li><a class="dropdown-item" href="#" onclick="checkLogin('semester6.html')">Semester 6</a></li>
+                             <li><a class="dropdown-item" href="#" onclick="checkLogin('semester7.html')">Semester 7</a></li>
+                <li><a class="dropdown-item" href="#" onclick="checkLogin('semester8.html')">Semester 8</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="#ContactUs">ContactUs</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<script>
+    // Function to check if the user is logged in in all dropdown semester
+    function checkLogin(semesterPage) {
+        let isLoggedIn = sessionStorage.getItem("isLoggedIn"); // Check login status
+
+        if (isLoggedIn === "true") {
+            window.location.href = semesterPage; // Allow access
+        } else {
+            alert("You must log in first!");
+            window.location.href = "login.html"; // Redirect to login
+        }
+    }
+
+    // Simulating login (In real cases, this should be handled on the backend)
+    document.getElementById("loginLink").addEventListener("click", function () {
+        sessionStorage.setItem("isLoggedIn", "true"); // Store login status
+    });
+</script>

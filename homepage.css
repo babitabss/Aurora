@@ -1,0 +1,322 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;700&display=swap');
+
+/* Apply Montserrat as the default font for all text */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Apply Pacifico font to headings or specific elements */
+ h2, h3, .about-title, .course-title  {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+}
+
+.hero-section h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    transform: scaleY(0.85); /* Makes it appear thinner */
+    opacity: 0.9; /* Lightens the appearance */
+    margin: 0 auto; /* Centers the text */
+    max-width: 80%; /* Keeps it within a readable width */
+    text-align: center; /* Ensures it's centered */
+}
+
+
+
+/* Navbar background color */
+#navbar {
+    background-color: #ffffff;  /* Same dark blue as footer */
+    padding: 5px 20px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Style navbar brand */
+.navbar-brand {
+    font-size: 2rem;
+    color: rgb(8, 8, 8) !important;
+    margin-right: 30px; /* Space after logo */
+    display: flex;
+    font-family: 'Great Vibes', cursive;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: bold;
+
+}
+
+/* Logo next to the brand */
+.navbar-brand img {
+    width: 30px;  /* Adjust size */
+    height: auto;
+    margin-left: 8px; /* Space between text and logo */
+}
+
+/* Navbar text color */
+.navbar-nav .nav-link {
+    color: rgb(7, 7, 7) !important;
+    padding: 6px 12px;
+    word-spacing: 10cap; 
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+      
+       /* Adjust spacing between characters */
+
+}
+
+/* Navbar toggler icon color */
+.navbar-toggler {
+    border-color: rgb(8, 8, 8);
+}
+
+.navbar-toggler-icon {
+    background-color: rgb(10, 10, 10);
+}
+.navbar-nav li {
+    margin-right: 15px; /* Increase space between menu items */
+}
+
+/* Apply Pacifico font to headings or specific elements */
+h2, h3, .about-title, .course-title  {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+}
+
+.hero-section {
+    background: url(uni.webp) no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end; /* Aligns the content to the right */
+    align-items: flex-end; /* Aligns content at the bottom */
+    text-align: right; /* Aligns text to the right */
+    padding-right: 40px; /* Adds some space from the right edge */
+    padding-bottom: 40px; /* Adds some space from the bottom */
+    position: relative;
+}
+
+.hero-section .container {
+    max-width: 800px;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+}
+
+.hero-section h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    transform: scaleY(0.85);
+    opacity: 0.9;
+    color: #333911; /* Dark gray for better visibility */
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #333911; /* Slightly lighter gray for the paragraph */
+}
+
+
+
+    
+   
+
+    .course-card {
+        transition: transform 0.3s ease-in-out;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .course-card:hover {
+        transform: scale(1.05);
+    }
+    .card img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .text-center mb-4 {
+        font-family: "Pacifico", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+.container text-center {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+/* Wild cursive font for course titles */
+.course-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    color: #2c3e50; /* Dark navy blue */
+    text-align: center;
+}
+
+/* Course card styling */
+.course-card {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+/* Course card image */
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Button styling */
+.btn-custom {
+    background-color: #ff5733;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+.btn-custom:hover {
+    background-color: #d8411f;
+}
+
+
+/* About Section Styling */
+.about-section {
+    padding: 80px 0;
+    background-color: #f8f9fa; /* Light Grey Background */
+   
+}
+
+/* Title Styling */
+.about-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: #2c3e50; /* Dark navy blue */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Description Styling */
+.about-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Image Styling */
+.about-img {
+    max-width: 100%;
+    border-radius: 50%;
+    height: 150px; /* Adjust image size */
+    width: 150px;
+    object-fit: cover;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+/* Image container with names */
+.about-img + h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Icon Styling */
+.about-icon {
+    font-size: 40px;
+    color: #ffffff;
+}
+#AboutUs {
+    margin-top: 40px;
+}
+
+
+/* Footer Styling */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+/* Footer Title */
+.footer-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #faf8f8;
+    margin-bottom: 20px;
+}
+
+/* Footer Text */
+.footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+/* Footer Icon */
+.footer i {
+    color: #f9f8f8;
+    margin-right: 10px;
+}
+
+/* Contact Form */
+.footer form {
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Input and Textarea */
+.footer .form-control {
+    background-color: #2c3e50;
+    border: 1px solid #444;
+    color: white;
+}
+
+/* Submit Button */
+.footer .btn {
+    background-color:#f8f9fa;
+    color: rgb(73, 52, 134);
+    font-weight: bold;
+    border: none;
+    margin-top: 15px;
+}
+
+/* Button Hover */
+.footer .btn:hover {
+    background-color:white;
+}
+
+/* Make footer responsive */
+@media (max-width: 768px) {
+    .footer .col-md-8 {
+        margin-top: 20px;
+    }
+}
