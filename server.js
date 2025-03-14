@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
     res.send('Welcome to the homepage!');
   });
 
-const PORT = process.env.PORT || 5005;
+const PORT = 5010;
 app.listen(PORT, (err) => {
   if (err) {
     console.error("Error starting the server:", err);
