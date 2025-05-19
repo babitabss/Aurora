@@ -1,7 +1,9 @@
 const express = require("express");
 const cors = require("cors");
-const bodyParser = require("body-parser");
+
 const authRoutes = require("./routes/authRoutes");
+const adminRoutes = require("./routes/adminRoutes");
+const courseRoutes = require("./routes/courseRoutes");
 
 require("dotenv").config();
 
@@ -9,20 +11,23 @@ const app = express();
 
 // Enable CORS with credentials support
 app.use(cors({
-  origin: 'http://127.0.0.1:5500', // Allow only your frontend URL
-  methods: 'GET, POST',
-  allowedHeaders: 'Content-Type, Authorization',
-  credentials: true // Allow sending cookies and authorization headers
+  origin:  ['http://127.0.0.1:5500', 'http://127.0.0.1:5501'],
+  methods: ['GET', 'POST', 'DELETE'],            // split as separate strings
+  allowedHeaders: ['Content-Type', 'Authorization'],  // split as separate strings
+  credentials: true
 }));
 
-app.use(bodyParser.json());
+
+app.use(express.json());
 app.use("/api/auth", authRoutes);
+app.use("/api/admin",adminRoutes);
+app.use("/api/courses", courseRoutes);
 
 app.get('/', (req, res) => {
   res.send('Welcome to the homepage!');
 });
 
-const PORT = 5011;
+const PORT = 5013;
 const server = app.listen(PORT, (err) => {
   if (err) {
     console.error("Error starting the server:", err);

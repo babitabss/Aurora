@@ -1,0 +1,35 @@
+in AI?
+ChatGPT said:
+In AI, agents are entities that perceive their environment through sensors and act upon it using actuators. There are five main types of AI agents, each with increasing levels of intelligence and complexity:
+1. Simple Reflex Agents
+•	Act based on current perceptions only, ignoring history.
+•	Follows condition-action rules (if-then logic).
+•	Example: A thermostat that turns on the heater if the temperature drops below a certain point.
+2. Model-Based Reflex Agents
+•	Maintain an internal model of the world to handle partially observable environments.
+•	Consider both current and past states before making a decision.
+•	Example: A self-driving car keeping track of past positions of pedestrians to predict their movement.
+3. Goal-Based Agents
+•	Have specific goals and take actions that lead toward achieving those goals.
+•	Require planning and decision-making to find the best sequence of actions.
+•	Example: A chess-playing AI that plans moves to checkmate an opponent.
+4. Utility-Based Agents
+•	Consider different possible actions and choose the one that maximizes utility (preference/satisfaction).
+•	More flexible than goal-based agents as they evaluate how desirable different outcomes are.
+•	Example: A recommendation system that suggests movies based on user ratings and preferences.
+5. Learning Agents
+•	Improve performance over time by learning from experience.
+•	Use machine learning techniques to update their knowledge and behavior dynamically.
+•	Example: AI assistants like Siri or Google Assistant that improve responses based on user interactions.
+Would you like a deeper explanation of any particular type? 😊
+2. Properties of Intelligent Agents:
+Property	Description
+✅ Autonomy	Can operate without human intervention.
+✅ Reactivity	Responds to changes in the environment in real time.
+✅ Pro-activeness	Takes initiative to achieve goals (not just reactive).
+✅ Social ability	Can communicate with other agents or humans.
+✅ Learning ability	Improves its performance based on experience or data.
+✅ Rationality	Chooses actions that are expected to maximize performance.
+
+explain the types of ANN?
+
