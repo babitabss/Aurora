@@ -4,6 +4,7 @@ const cors = require("cors");
 const authRoutes = require("./routes/authRoutes");
 const adminRoutes = require("./routes/adminRoutes");
 const courseRoutes = require("./routes/courseRoutes");
+const contactRoutes = require("./routes/contactRoutes")
 
 require("dotenv").config();
 
@@ -21,13 +22,16 @@ app.use(cors({
 app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/admin",adminRoutes);
+app.use('/api/contact', contactRoutes);
 app.use("/api/courses", courseRoutes);
+
+
 
 app.get('/', (req, res) => {
   res.send('Welcome to the homepage!');
 });
 
-const PORT = 5013;
+const PORT = 5014;
 const server = app.listen(PORT, (err) => {
   if (err) {
     console.error("Error starting the server:", err);
