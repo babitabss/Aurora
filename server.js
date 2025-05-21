@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const cookieParser = require('cookie-parser');
 
 const authRoutes = require("./routes/authRoutes");
 const adminRoutes = require("./routes/adminRoutes");
@@ -10,6 +11,7 @@ require("dotenv").config();
 
 const app = express();
 
+app.use(cookieParser());
 // Enable CORS with credentials support
 app.use(cors({
   origin:  ['http://127.0.0.1:5500', 'http://127.0.0.1:5501'],
@@ -17,6 +19,8 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization'],  // split as separate strings
   credentials: true
 }));
+
+
 
 
 app.use(express.json());

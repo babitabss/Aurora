@@ -54,3 +54,16 @@ exports.login = async (req, res) => {
     res.status(500).json({ message: "Error finding user" });
   }
 };
+
+exports.checkSession = (req, res) => {
+  const token = req.cookies.token;
+
+  if (!token) return res.json({ loggedIn: false });
+
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    res.json({ loggedIn: true, user: decoded });  // You can send back name/role/email too
+  } catch (err) {
+    return res.json({ loggedIn: false });
+  }
+};
